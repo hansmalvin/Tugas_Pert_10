@@ -69,6 +69,32 @@
           transform: scale(1.01);
           box-shadow: 0 10px 20px rgba(80, 35, 20, 0.2), 0 4px 8px rgba(80, 35, 20, 0.1);
         }
+        .exp-img{
+          vertical-align: middle;
+          border-radius: 50%;
+        }
+        .explora{
+          padding: 20px;
+        }
+        .container-maps{
+          border-radius: 20px;
+          overflow: hidden;
+        }
+        .card-team{
+          padding: 20px;
+          background-color: #D7C4B5;
+          border-radius: 15px;
+          transition: .3s transform cubic-bezier(.155,1.105,.295,1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+          cursor: pointer;
+        }
+        .card-team:hover{
+          transform: scale(1.01);
+          box-shadow: 0 10px 20px rgba(80, 35, 20, 0.2), 0 4px 8px rgba(80, 35, 20, 0.1);
+        }
+        .card-team img{
+          border-radius: 50%;
+          object-fit: cover;
+        }
     </style>
   </head>
   <body>
@@ -95,14 +121,14 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about" data-bs-toggle="tooltip" data-bs-placement="bottom" title="About">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact Us">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#subs" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact Us">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="content.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="More Content">Content</a></li>
-            <li class="nav-item"><a class="btn btn-dark" href="#subs" role="button" id="mgkanan">Subscribe</a></li>
+            <li class="nav-item"><a class="btn btn-dark d-md-block d-none" href="#subs" role="button" id="mgkanan" data-bs-toggle="modal" data-bs-target="#subscriptionModal">Subscribe</a></li>
           </ul>
         </div>
 
         <form class="d-flex">
-            <input class="form-control me-2 d-md-block d-none bg-light" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2 d-md-block d-none bg-light" type="search" placeholder="No Feature yet" aria-label="Search">
             <button class="btn btn-outline-dark d-md-block d-none" type="submit">Search</button>
         </form>        
       </div>
@@ -116,23 +142,23 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/banner_02 (1).jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption">
-                  <h5>Summer Fashion Trends</h5>
-                  <p>Bright colors and lightweight fabrics are in this season.</p>
+                <div class="carousel-caption d-md-block d-none">
+                  <h5>Best Italian Food</h5>
+                  <p class="fs-4">Best Shrimp Alfredo food you ever tasted.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/banner_01 (1).jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption">
-                  <h5>Autumn Fashion</h5>
-                  <p>Master the art of layering with cozy, stylish pieces.</p>
+                <div class="carousel-caption d-md-block d-none">
+                  <h5>Meat Lovers</h5>
+                  <p class="fs-4">Medium-Rare A5 Quality Meat.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/banner_03 (1).jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption">
-                  <h5>Autumn Fashion</h5>
-                  <p>Master the art of layering with cozy, stylish pieces.</p>
+                <div class="carousel-caption d-md-block d-none">
+                  <h5>Healthy Food</h5>
+                  <p class="fs-4">Master the art of eating healthy food with us.</p>
                 </div>
               </div>
             </div>
@@ -162,7 +188,7 @@
                       <a class="btn btn-dark" data-bs-toggle="collapse" href="#testAccord" role="button" aria-expanded="false" aria-controls="testAccord">Read More</a>
                       <div class="collapse multi-collapse" id="testAccord">
                         <div class="card card-body">
-                            Stay ahead in fashion with insights into what's trending, sustainable fashion tips.
+                            Powerful mind comes from the body, unhealthy body can distract your whole body.
                         </div>
                       </div>
                     </div>
@@ -174,13 +200,14 @@
                 <img src="images/banner_02 (1).jpg" class="card-img-top" alt="...">
                 <div class="text-start">
                     <div class="card-body">
-                      <h5 class="card-title">Explore Fashion & Trends</h5>
-                      <p class="card-text">Stay ahead in fashion with insights into what's trending, sustainable fashion tips, and more.Discover the latest trends in wellness</p>
+                      <h5 class="card-title">Explore Food & Trends</h5>
+                      <p class="card-text">A good breakfast can change your whole day, just by 1 simple breakfast a whole day can be ruined. Find our best menu</p>
                       <hr>
                       <a class="btn btn-dark" data-bs-toggle="collapse" href="#testAccord1" role="button" aria-expanded="false" aria-controls="testAccord1">Read More</a>
                       <div class="collapse multi-collapse" id="testAccord1">
                         <div class="card card-body">
-                            Stay ahead in fashion with insights into what's trending, sustainable fashion tips.
+                            A focused mind comes from the body and the heart, if we fail one of those things, a lot of
+                            distraction will appear.
                         </div>
                       </div>
                     </div>
@@ -192,13 +219,13 @@
                 <img src="images/banner_03 (1).jpg" class="card-img-top" alt="...">
                 <div class="text-start">
                     <div class="card-body">
-                      <h5 class="card-title">Latest in Wellness</h5>
-                      <p class="card-text">Discover the latest trends in wellness, from meditation techniques to fitness tips that keep you grounded and healthy.</p>
+                      <h5 class="card-title">Latest in Food and Fitness</h5>
+                      <p class="card-text">A good muscle not comes from too much working hard, but by eating and making a hard and healthy meal that we consumed.</p>
                       <hr>
                       <a class="btn btn-dark" data-bs-toggle="collapse" href="#testAccord2" role="button" aria-expanded="false" aria-controls="testAccord2">Read More</a>
                       <div class="collapse multi-collapse" id="testAccord2">
                         <div class="card card-body">
-                            Stay ahead in fashion with insights into what's trending, sustainable fashion tips.
+                            Stay relevant to our newest food recipe and exercise menu and tips.
                         </div>
                       </div>
                     </div>
@@ -212,7 +239,42 @@
     <section class="py-5" id="about">
         <div class="container">
             <div class="text-center">
-                <h2 class="mb-4">About Lifestyle</h2>
+                <h2>About Lifestyle</h2>
+                <h2 class="mb-4 fs-1">Explore Lifestyle & Wellness</h2>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-4 explora">
+                <img src="images/exp.jpg" class="exp-img">
+                <h4 style="color: #502314;">Focused Mind</h4>
+                <p style="padding: 0 50px 0;">Learn how to be good at everything with just a simple step of increasing focus on
+                  your everyday work.
+                </p>
+              </div>
+              <div class="col-md-4 explora">
+                <img src="images/exp.jpg" class="exp-img">
+                <h4 style="color: #502314;">Focused Mind</h4>
+                <p style="padding: 0 50px 0;">Learn how to be good at everything with just a simple step of increasing focus on
+                  your everyday work.
+                </p>
+              </div>
+              <div class="col-md-4 explora">
+                <img src="images/exp.jpg" class="exp-img">
+                <h4 style="color: #502314;">Focused Mind</h4>
+                <p style="padding: 0 50px 0;">Learn how to be good at everything with just a simple step of increasing focus on
+                  your everyday work.
+                </p>
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <button 
+                  type="button" 
+                  class="btn btn-dark mb-5" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#subscriptionModal"
+                  style="width: 150px; border-radius: 20px;"
+                  >
+                  Subscribe
+                </button>
+              </div>
             </div>
             <div class="row mb-5">
                 <div class="col-md-6 d-flex align-items-center">
@@ -267,23 +329,118 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>  
+    
+    <section class="py-5">
+      <div class="container text-center ourTeam">
+        <h2>Meet Our Team</h2>
+        <p class="fs-4 mb-5">Hello, We are here to deliver you what's yours. <br> Your Dream should be Real.</p>
+        <div class="row justify-content-center g-3">
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center card-team mb-4 mx-2">
+            <img src="images/exp.jpg" alt="..." class="img-fluid mb-3">
+            <h4 style="color: #502314;">Hans Malvin</h4>
+            <p>Team Lead with 5 months worth of experience. Strong at finding something.</p>
+            <div class="social-icon">
+              <a href="https://github.com/hansmalvin/Tugas_Pert_10">
+                <i class="bi bi-github" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hans-malvin-673341335/">
+                <i class="bi bi-linkedin mx-2" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.instagram.com/malvinhans">
+                <i class="bi bi-instagram" style="color: #502314;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center card-team mb-4 mx-2">
+            <img src="images/exp.jpg" alt="..." class="img-fluid mb-3">
+            <h4 style="color: #502314;">Egalang Farmah</h4>
+            <p>Tech Lead with 1 year worth of experience. Strong at building website.</p>
+            <div class="social-icon">
+              <a href="https://github.com/hansmalvin/Tugas_Pert_10">
+                <i class="bi bi-github" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hans-malvin-673341335/">
+                <i class="bi bi-linkedin mx-2" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.instagram.com/malvinhans">
+                <i class="bi bi-instagram" style="color: #502314;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center card-team mb-4 mx-2">
+            <img src="images/exp.jpg" alt="..." class="img-fluid mb-3">
+            <h4 style="color: #502314;">Putra Akbaran</h4>
+            <p>Most Valuable Person with a lot of talent at every programming language. Codes in notepad.</p>
+            <div class="social-icon">
+              <a href="https://github.com/hansmalvin/Tugas_Pert_10">
+                <i class="bi bi-github" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hans-malvin-673341335/">
+                <i class="bi bi-linkedin mx-2" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.instagram.com/malvinhans">
+                <i class="bi bi-instagram" style="color: #502314;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 text-center card-team mb-4 mx-2">
+            <img src="images/exp.jpg" alt="..." class="img-fluid mb-3">
+            <h4 style="color: #502314;">Darren Kurshiny</h4>
+            <p>Our most valuable marketing lead. Strong at getting a deal.</p>
+            <div class="social-icon">
+              <a href="https://github.com/hansmalvin/Tugas_Pert_10">
+                <i class="bi bi-github" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hans-malvin-673341335/">
+                <i class="bi bi-linkedin mx-2" style="color: #502314;"></i>
+              </a>
+              <a href="https://www.instagram.com/malvinhans">
+                <i class="bi bi-instagram" style="color: #502314;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="py-5" id="subs">
+      <hr>
       <div class="container text-center">
-        <h2>Join Our Community</h2>
-        <h3>Subscribe for the latest lifestyle updates</h3>
-        <form class="row justify-content-center g-3 mt-4">
-          <div class="col-md-4">
-            <input type="text" class="form-control bg-light" id="firstname" name="firstname" placeholder="First Name" required />
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <h2>Join Our Community</h2>
+            <h3>You can Contact us if you're interested</h3>
+            <form class="row justify-content-center g-3 mt-4">
+              <div class="col-md-6">
+                <input type="text" class="form-control bg-light" id="firstname" name="firstname" placeholder="First Name" required />
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control bg-light" id="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="col-md-6 mb-4">
+                <button 
+                  type="submit" 
+                  id="joinButton"
+                  class="btn btn-dark w-100" 
+                  onclick="toggleJoin();" 
+                  >
+                  Join now
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="col-md-4">
-            <input type="email" class="form-control bg-light" id="email" name="email" placeholder="Email" required />
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="container-maps mb-3">
+                <iframe 
+                  width="600" 
+                  height="300" 
+                  loading="lazy" 
+                  allowfullscreen 
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Warteg%20GACOR&zoom=10&maptype=roadmap">
+                </iframe>
           </div>
-          <div class="col-md-2">
-            <button type="submit" class="btn btn-dark w-100" onclick="event.preventDefault(); window.location.href='subscriptionpage.html';">Subscribe</button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
 
@@ -306,9 +463,9 @@
               See our recommended food
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Healthy</a></li>
-              <li><a class="dropdown-item" href="#">High fibre</a></li>
-              <li><a class="dropdown-item" href="#">Low Fat</a></li>
+              <li><a class="dropdown-item" href="https://youtu.be/tX2dliC5zU4?feature=shared" target="_blank">Healthy</a></li>
+              <li><a class="dropdown-item" href="https://youtu.be/_sHthj7dXs0?feature=shared" target="_blank">High fiber</a></li>
+              <li><a class="dropdown-item" href="https://youtu.be/1gSbjdSEMfo?feature=shared" target="_blank">Low Fat</a></li>
             </ul>
           </div>
         </div>
@@ -319,9 +476,64 @@
         <a href="#">Privacy Policy</a> •
         <a href="#">Terms & Conditions</a>
       </small>
-      <p class="fs-5">Hans Malvin Djojo | Lifestyle © 2024</p>
+      <p class="fs-5">Recreated by Hans Malvin Djojo | Lifestyle © 2024</p>
     </footer>
 
+    <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-light">
+            <h5 class="modal-title" id="subscriptionModalLabel">Subscribe Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light">
+            <form id="subsForm">
+              <div class="mb-3">
+                <label for="nameInp" class="form-label">
+                  Your Name
+                </label>
+                <input type="text" class="form-control" id="nameInp" style="background-color: #502314;" required>
+              </div>
+              <div class="mb-3">
+                <label for="emailInp" class="form-label">
+                  Your Email
+                </label>
+                <input type="email" class="form-control" id="emailInp" style="background-color: #502314;" required>
+              </div>
+              <div class="mb-3">
+                <label for="SubsClass" class="form-label">
+                  Subs Class
+                </label>
+                <select class="form-select" id="SubsClass" required>
+                  <option value="weekly">10$ - Weekly</option>
+                  <option value="monthly">30$ - Monthly</option>
+                  <option value="yearly">100$ - Yearly</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-dark w-100" id="subs-submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="modal-footer bg-light">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Not Interested?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let isJoined = false;
+      function toggleJoin() {
+        const btn = document.getElementById("joinButton");
+        if (isJoined) {
+          alert("noo, why did u leave us &#xF31D;");
+          btn.innerText = "Join now";
+        } else {
+          alert("Thanks for joining us");
+          btn.innerText = "Batal Join";
+        }
+        isJoined = !isJoined;
+      }
+    </script>
   </body>
 </html>
